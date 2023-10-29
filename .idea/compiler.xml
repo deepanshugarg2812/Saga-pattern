@@ -11,9 +11,11 @@
         <module name="OrderService" />
         <module name="UserService" />
         <module name="PaymentService" />
+        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ApiGateway" target="11" />
       <module name="CommonService" target="11" />
       <module name="OrderService" target="11" />
       <module name="PaymentService" target="11" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="CommonService" options="-parameters" />
       <module name="OrderService" options="-parameters" />
       <module name="PaymentService" options="-parameters" />
